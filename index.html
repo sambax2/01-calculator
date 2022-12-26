@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css">
-  <title> Simple Calculator </title>
-</head>
-<body>
-  <h1>Just trying</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <h1>Just trying</h1>
 
-
-<table>
-  <tr><td><input id="n1" type="text" value="Insert a number 1"></td><td></td></tr>
-  <tr><td><input id="n2" type="text" value="Insert a number 2"></td><td><button id="addOperation">+</button><button id="substractOperation">-</button></td></tr>
-  <tr><td><input id="result" readonly="yes" type="text" value="Result"></td><td></td></tr>
-</table>
-</body>
-<script src="./js/main.js"></script>
+    <table>
+      <tr>
+        <!-- Declared input type as number and not as text -->
+        <!-- Use a 'placeholder' if you want to have something written inside input field instead of value -->
+        <td><input id="n1" type="number" placeholder="number 1" /></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><input id="n2" type="number" placeholder="number 2" /></td>
+        <td>
+          <button id="addOperation">+</button
+          ><button id="substractOperation">-</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input id="result" type="number" readonly placeholder="result" />
+        </td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+  <script src="./js/main.js"></script>
 </html>
